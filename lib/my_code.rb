@@ -49,6 +49,13 @@ end
 
 def reduce_to_total(source_array, starting_point=0)
   total = starting_point
-  source_array.length.times{|i|total = source_array[i] + total}
+  i = 0
+  
+  while i < source_array.length do
+  total += source_array[i]
+  
+  i += 0
+  end
+  # source_array.length.times{|i|total = source_array[i] + total}
   total
 end
